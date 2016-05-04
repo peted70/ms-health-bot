@@ -146,7 +146,7 @@ namespace BotApp
                                     var totalSpan = TimeSpan.FromTicks(total);
 
                                     var avSleepStr = $"{sleepSpan.ToString(@"%h")} hrs {sleepSpan.ToString(@"%m")} mins";
-                                    var totalSleepStr = $"{totalSpan.ToString(@"%h")} hrs {totalSpan.ToString(@"%m")} mins";
+                                    var totalSleepStr = $"{totalSpan.ToString(@"%d")} days {totalSpan.ToString(@"%h")} hrs {totalSpan.ToString(@"%m")} mins";
 
                                     prompt = $"You have tracked {num} sleeps - average sleep per night {avSleepStr} for a total of {totalSleepStr}";
                                 }
