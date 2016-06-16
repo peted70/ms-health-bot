@@ -1,0 +1,125 @@
+{
+  "luis_schema_version": "1.2.0",
+  "name": "MSHealthBot",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "Name": "None",
+      "Children": []
+    },
+    {
+      "Name": "SummariseActivity",
+      "Children": []
+    }
+  ],
+  "entities": [
+    {
+      "Name": "ActivityType",
+      "Children": []
+    }
+  ],
+  "bing_entities": [
+    "datetime"
+  ],
+  "actions": [],
+  "model_features": [
+    {
+      "name": "ActivityType",
+      "mode": true,
+      "words": "Run,Bike,Golf,Guided Workout,Exercise,Sleep,jog,walk",
+      "activated": true
+    }
+  ],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "how much sleep have i had in last 2 weeks?",
+      "intent": "SummariseActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how many steps have i taken in last 2 weeks?",
+      "intent": "SummariseActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how far have i run in the last two weeks?",
+      "intent": "SummariseActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "summarise my steps?",
+      "intent": "SummariseActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how far did i run?",
+      "intent": "SummariseActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "how many steps have i taken in the past year?",
+      "intent": "SummariseActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how far did i walk yesterday?",
+      "intent": "SummariseActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "how long did i sleep for last night?",
+      "intent": "SummariseActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    }
+  ]
+}
